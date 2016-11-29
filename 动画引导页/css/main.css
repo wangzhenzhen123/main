@@ -86,8 +86,13 @@ iframe, img {
 
 .loading img {
     display: block;
+<<<<<<< HEAD
     width: 90px;
     margin: 30px auto;
+=======
+    width: 80px;
+    margin: 20px auto;
+>>>>>>> 20161128-main-editMain
 }
 
 .loading-progress {
