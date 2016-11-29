@@ -87,7 +87,7 @@ iframe, img {
 .loading img {
     display: block;
     width: 90px;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .loading-progress {
