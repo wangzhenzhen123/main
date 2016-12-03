@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="/app/prd/styles/app.css">
+</head>
+<body>
+<!--demo1-->
+<!-- <div ng-controller="democon">
+<p>{{user[0].user}}--{{user[0].email}}</p>
+<p ng-bind="user[1].user"></p>
+</div> -->
+<!--demo2-->
+<!-- <div ng-controller="democon">
+<ul>
+<li ng-repeat="item in user">
+<b>用户名{{$index+1}}：{{item.user}}</b> -
+<span>邮箱{{$index+1}}：{{item.email}}</span>
+</li>
+</ul>
+<div ng-show="isShow">是否显示?</div>
+<div ng-hide="isShow">是否隐藏</div>
+<div ng-if="isShow">通过ng-if来显示和隐藏</div>
+</div> -->
+<!--demo3-->
+<!-- <div ng-controller="democon">
+<input type="text" ng-model="counter">
+<input type="button" value="+" ng-click="add()">
+</div> -->
+<!--demo4-->
+<!-- <div ng-controller="democon">
+<label>
+请输入您感兴趣的课程：
+<input type="text" ng-model="item" ng-keyup="addItem($event)">
+</label>
+<ul>
+<li ng-repeat="item in items track by item">
+{{item}}
+</li>
+</ul>
+</div> -->
+<!--demo5-->
+<div ng-controller="democon">
+<p>{{price | currency:"￥"}}</p>
+<ul>
+<li ng-repeat="book in books | limitTo:limit | orderBy:'-updated'">
+<p>书名：{{book.name | uppercase}}</p>
+<p>更新时间：{{book.updated | date:"yyyy年MM月dd日 HH:mm"}}</p>
+</li>
+</ul>
+</div>
+<script src="/app/libs/angular.min.js"></script>
+<script src="/app/prd/scripts/app.js"></script>
+</body>
+</html>
